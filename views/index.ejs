@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <ul>
+      <% tasks.forEach(task => { %>
+      <li><%= task %></li>
+      <% }); %>
+    </ul>
+    <form action="/add" method="post">
+      <input type="text" name="task" placeholder="New task" required />
+      <button type="submit">Add Task</button>
+    </form>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <ul>
+      <% tasks.forEach(task => { %>
+      <li><%= task %></li>
+      <% }); %>
+    </ul>
+    <form action="/add" method="post">
+      <input type="text" name="task" placeholder="New task" required />
+      <button type="submit">Add Task</button>
+    </form>
+  </body>
+</html>
